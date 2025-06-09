@@ -1,6 +1,6 @@
 import type { DecryptRequest, EncryptResponse } from "../types/crypto";
 
-const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'http://127.0.0.1:3001';
 
 export async function encryptText(text: string): Promise<EncryptResponse> {
   const response = await fetch(`${BASE_URL}/encrypt`, {
